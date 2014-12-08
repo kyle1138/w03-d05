@@ -1,0 +1,86 @@
+<html>
+<head>
+<style>
+header{
+  text-align:center
+}
+body{
+  background:silver;
+}
+#main{
+  background-color: #FF8811;
+  float:center;
+  width:95%;
+  height:280;
+  margin: 0 auto;
+}
+ul{
+  text-align:center;
+  float:center;
+  padding:4%;
+  width: 100%;
+}
+li{
+  list-style-type: none;
+  display: block;
+  float: left;
+  width:30%;
+}
+.question{
+  width: 94%;
+  height: 130px;
+  border: 5px;
+  background-color: #0087FF;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding:3px;
+  font-size:24px;
+  margin: 0 auto;
+}
+p{
+  float:center;
+}
+</style>
+</head>
+<body>
+  <header><h1>Fun Facts About Kyle Hogan</h1>
+  </header>
+  <body>
+    <div id="main">
+      <ul>
+        <li><div class = "question">
+          <p>I once ate two corndogs from gas station in North Carolina.</p>
+        </div>
+        <input id="f1" type = "checkbox">
+      </li>
+      <li><div class = "question">
+        <p>My birthday is at the end of June.</p>
+      </div>
+      <input id = "f2" type = "checkbox">
+    </li>
+    <li><div class = "question">
+      <p>I saw "Indiana Jones and the Kingdom of the Crysal Skull" in the theater, TWICE.</p>
+    </div>
+    <input id = "f3" type="checkbox">
+  </li>
+</ul>
+</div>
+</br></br></br></br>
+
+<a href="http://lauren.princesspeach.nyc">"http://lauren.princesspeach.nyc"</a>
+<script>
+
+  var f1 = document.getElementById("f1");
+  var f2 = document.getElementById("f2");
+  var f3 = document.getElementById("f3");
+
+  var good = function(){alert("You are correct, you have seen into my soul.");}
+  var bad = function(){alert("WRONG! I was born in early July.");}
+  f1.addEventListener("click" , function(){if(f1.checked == true && f3.checked == true){good()}});
+  f2.addEventListener("click" , bad);
+  f3.addEventListener("click" , function(){if(f1.checked == true && f3.checked == true){good()}});
+
+
+</script>
+</body>
+</html>

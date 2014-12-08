@@ -1,0 +1,38 @@
+
+<body>
+<div>
+<h1>Let's talk about you.</h1>
+</div>
+<h2>Tell us about yourself</h2>
+</br>
+<input type="text" id = "name" value = "your name here">
+</br></br>
+<input type="text" id = "town" value = "your hometown">
+</br></br>
+<input type="text" id = "sign" value = "your zodiac sign">
+</br></br>
+<input type="text" id = "color" value = "your favorite color">
+</br></br></br>
+
+<button id = "but" >Magically generate your new homepage!</button>
+
+
+var name = document.getElementById("name");
+var town = document.getElementById("name");
+var sign = document.getElementById("sign");
+var color = document.getElementById("color");
+var but = document.getElementById("but");
+
+
+var newPage = function (){
+  var slate = document.createElement("div");
+  slate.style.width = 1000;
+  slate.style.height = 1000 ;
+  slate.style.background = "rgba(100,155,255,0.5)";
+  slate.position = "fixed";
+  slate.margin = 0;
+  slate.padding = 0;
+  bod.insertBefore(slate , heading);
+
+
+}
