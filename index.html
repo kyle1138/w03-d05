@@ -65,8 +65,9 @@ p{
   </li>
 </ul>
 </div>
-</br></br></br></br>
-
+</br></br>
+</br></br>
+</br></br>
 <a href="http://lauren.princesspeach.nyc">"http://lauren.princesspeach.nyc"</a>
 <script>
 
@@ -77,8 +78,24 @@ p{
   var good = function(){alert("You are correct, you have seen into my soul.");}
   var bad = function(){alert("WRONG! I was born in early July.");}
   f1.addEventListener("click" , function(){if(f1.checked == true && f3.checked == true){good()}});
-  f2.addEventListener("click" , bad);
+  f2.addEventListener("click" , function(){if(f2.checked ===true){bad()} });
   f3.addEventListener("click" , function(){if(f1.checked == true && f3.checked == true){good()}});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </script>
